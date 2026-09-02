@@ -1,0 +1,24 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# Dependency folders (if added later)
+node_modules/
+assets/images/39.apk
+
+# Build outputs
+/dist/
+/build/
+
+# Environment files
+.env
+.env.*

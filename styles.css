@@ -1,0 +1,421 @@
+:root {
+    --bg: #F8F3E9;
+    --gold: #F4B400;
+    --gold-deep: #A5780A;
+    --ink: #141414;
+    --ink-soft: #5B5B57;
+    --line: rgba(20, 20, 20, 0.10);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@keyframes fade-up {
+    from {
+        opacity: 0;
+        transform: translateY(16px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes bounce-in {
+    0% {
+        opacity: 0;
+        transform: scale(0.3) rotate(-8deg);
+    }
+
+    55% {
+        opacity: 1;
+        transform: scale(1.15) rotate(4deg);
+    }
+
+    75% {
+        transform: scale(0.95) rotate(-2deg);
+    }
+
+    100% {
+        transform: scale(1) rotate(0);
+    }
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background: var(--bg);
+    background-image: radial-gradient(var(--line) 1px, transparent 1px);
+    background-size: 22px 22px;
+    color: var(--ink);
+    font-family: 'Inter', 'Kantumruy Pro', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.wrap {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+
+h1 {
+    font-family: 'Poppins', 'Kantumruy Pro', sans-serif;
+    color: var(--ink);
+    margin: 0;
+}
+
+/* ---------- Nav ---------- */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Poppins', 'Kantumruy Pro', sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    transform-origin: center;
+    animation: bounce-in 0.8s ease-out both;
+}
+
+.lang-switch,
+.eyebrow,
+.hero h1,
+.hero p,
+.store-row {
+    animation: fade-up 0.6s ease-out both;
+}
+
+.lang-switch {
+    animation-delay: 0.05s;
+}
+
+.eyebrow {
+    animation-delay: 0.1s;
+}
+
+.hero h1 {
+    animation-delay: 0.2s;
+}
+
+.hero p {
+    animation-delay: 0.3s;
+}
+
+.store-row {
+    animation-delay: 0.5s;
+}
+
+.lang-switch {
+    display: inline-flex;
+    align-items: center;
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 4px;
+    gap: 2px;
+}
+
+.lang-switch button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: transparent;
+    color: var(--ink-soft);
+    font-family: 'Inter', 'Kantumruy Pro', sans-serif;
+    font-weight: 600;
+    font-size: 0.86rem;
+    padding: 6px;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: background 0.18s ease, color 0.18s ease;
+}
+
+.lang-switch button img {
+    display: block;
+}
+
+.lang-switch button.active {
+    background: var(--gold);
+    color: var(--ink);
+}
+
+.lang-switch button:focus-visible {
+    outline: 2px solid var(--gold-deep);
+    outline-offset: 2px;
+}
+
+/* ---------- Hero: single, centered path to the CTA ---------- */
+.hero {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.eyebrow {
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--gold-deep);
+    margin-bottom: 10px;
+}
+
+.hero h1 {
+    font-size: clamp(2.1rem, 4.6vw, 2.9rem);
+    font-weight: 700;
+    line-height: 1.16;
+    letter-spacing: -0.01em;
+}
+
+.hero h1 .accent {
+    color: var(--gold-deep);
+}
+
+.hero p {
+    max-width: 380px;
+    margin: 14px auto 32px;
+    font-size: 1rem;
+    color: var(--ink-soft);
+    line-height: 1.6;
+}
+
+.app-icon-wrap {
+    margin-bottom: 36px;
+    animation: fade-up 0.6s ease-out 0.4s both, float 3.2s ease-in-out 1.3s infinite;
+}
+
+.app-icon {
+    width: min(240px, 62vw);
+    background: transparent;
+    transform-origin: center;
+    animation: bounce-in 0.8s ease-out 0.5s both;
+}
+
+.app-icon img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.store-row {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: stretch;
+    width: 100%;
+    max-width: 260px;
+}
+
+.store-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px 20px;
+    border-radius: 12px;
+    background: var(--ink);
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Inter', 'Kantumruy Pro', sans-serif;
+    transition: transform 0.18s ease, opacity 0.18s ease;
+}
+
+.store-btn:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+.store-btn:active {
+    transform: scale(0.97);
+}
+
+.store-btn:focus-visible {
+    outline: 2px solid var(--gold);
+    outline-offset: 3px;
+}
+
+.store-btn .sub {
+    display: block;
+    font-size: 0.64rem;
+    opacity: 0.75;
+    font-weight: 400;
+}
+
+.store-btn .main {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+/* ---------- Footer ---------- */
+footer {
+    border-top: 1px solid var(--line);
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    color: var(--ink-soft);
+    font-size: 0.86rem;
+    margin: 0;
+}
+
+footer .support {
+    margin-top: 6px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+footer .support a {
+    color: var(--ink);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+footer .support a:hover {
+    color: var(--gold-deep);
+}
+
+footer .support svg {
+    color: var(--gold-deep);
+    flex-shrink: 0;
+}
+
+/* ---------- Desktop: fit everything within one viewport, no scroll ---------- */
+@media (min-width: 901px) {
+    nav {
+        padding: 20px 0;
+    }
+
+    .hero {
+        padding: 16px 0;
+    }
+
+    .eyebrow {
+        margin-bottom: 8px;
+    }
+
+    .hero p {
+        margin: 10px auto 18px;
+    }
+
+    .app-icon-wrap {
+        margin-bottom: 18px;
+    }
+
+    .app-icon {
+        width: auto;
+    }
+
+    .app-icon img {
+        display: block;
+        width: auto;
+        height: auto;
+        max-width: min(200px, 22vw);
+        max-height: 30vh;
+        object-fit: contain;
+    }
+
+    footer {
+        padding: 12px 0;
+    }
+
+    footer .support {
+        margin-top: 4px;
+    }
+}
+
+@media (max-width: 560px) {
+    .wrap {
+        padding: 0 20px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        gap: 14px;
+    }
+
+    .hero {
+        padding: 24px 0;
+    }
+
+    .hero h1 {
+        font-size: clamp(1.8rem, 7vw, 2.3rem);
+    }
+
+    .hero p {
+        font-size: 0.92rem;
+        margin: 12px auto 26px;
+    }
+
+    .app-icon-wrap {
+        margin-bottom: 28px;
+    }
+
+    .app-icon {
+        width: min(200px, 66vw);
+    }
+
+    .store-btn {
+        padding: 13px 20px;
+        min-height: 48px;
+    }
+
+    .store-btn .main {
+        font-size: 0.96rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    .logo,
+    .lang-switch,
+    .eyebrow,
+    .hero h1,
+    .hero p,
+    .app-icon-wrap,
+    .app-icon,
+    .store-row,
+    .store-btn {
+        animation: none;
+        transition: none;
+    }
+}
