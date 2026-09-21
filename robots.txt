@@ -1,0 +1,5 @@
+# robots.txt for https://www.seva24.app
+User-agent: *
+Allow: /
+
+Sitemap: https://www.seva24.app/sitemap.xml
