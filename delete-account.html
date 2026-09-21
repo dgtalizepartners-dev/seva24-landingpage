@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Delete Account &amp; User Data — Seva24 | Saisons Brother Holding</title>
+    <meta name="description"
+        content="Request account and personal data deletion for the Seva24 mobile application by Saisons Brother Holding Co., Ltd. Learn how your data is handled, deleted, and retained.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=Kantumruy+Pro:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .danger-alert {
+            background: #FFF5F5;
+            border: 1px solid #FED7D7;
+            border-left: 4px solid #E53E3E;
+            border-radius: 10px;
+            padding: 16px 20px;
+            margin: 20px 0;
+        }
+
+        .danger-alert p {
+            margin: 0;
+            color: #9B2C2C;
+            font-size: 0.92rem;
+            line-height: 1.6;
+        }
+
+        .entity-box {
+            background: #F8FAFC;
+            border: 1px solid #E2E8F0;
+            border-radius: 12px;
+            padding: 18px 20px;
+            margin-bottom: 24px;
+        }
+
+        .entity-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 6px 0;
+            font-size: 0.9rem;
+            border-bottom: 1px dashed #E2E8F0;
+        }
+
+        .entity-row:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .entity-row .label {
+            color: var(--ink-soft);
+            font-weight: 500;
+        }
+
+        .entity-row .val {
+            color: var(--ink);
+            font-weight: 600;
+            text-align: right;
+        }
+
+        .step-list {
+            margin: 12px 0 20px 20px;
+            padding: 0;
+            color: var(--ink-soft);
+            line-height: 1.8;
+            font-size: 0.95rem;
+        }
+
+        .step-list li {
+            margin-bottom: 8px;
+        }
+
+        .table-responsive {
+            width: 100%;
+            overflow-x: auto;
+            margin: 16px 0 24px;
+        }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.88rem;
+            text-align: left;
+        }
+
+        .data-table th,
+        .data-table td {
+            padding: 12px 14px;
+            border: 1px solid var(--line);
+        }
+
+        .data-table th {
+            background: var(--bg);
+            color: var(--ink);
+            font-weight: 600;
+        }
+
+        .data-table td {
+            color: var(--ink-soft);
+        }
+
+        .checkbox-group {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            margin-top: 4px;
+        }
+
+        .checkbox-group input[type="checkbox"] {
+            margin-top: 3px;
+            accent-color: var(--gold-deep);
+            width: 16px;
+            height: 16px;
+            cursor: pointer;
+        }
+
+        .checkbox-group label {
+            font-size: 0.85rem;
+            color: var(--ink-soft);
+            cursor: pointer;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="wrap page-wrap">
+        <nav>
+            <div class="logo">
+                <a href="index.html" style="display:flex;align-items:center;text-decoration:none;color:inherit;">
+                    <img src="assets/images/seva24-logo.png" alt="Seva24 Logo" width="50" height="50">
+                </a>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="nav-back">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="19" y1="12" x2="5" y2="12"></line>
+                        <polyline points="12 19 5 12 12 5"></polyline>
+                    </svg>
+                    <span data-en="Home" data-km="ទំព័រដើម">Home</span>
+                </a>
+                <div class="lang-switch" role="group" aria-label="Language">
+                    <button type="button" class="active" aria-pressed="true" data-lang="en">
+                        <img src="assets/images/flag-us.png" alt="English" width="20" height="20">
+                    </button>
+                    <button type="button" aria-pressed="false" data-lang="km">
+                        <img src="assets/images/flag-kh.png" alt="ខ្មែរ" width="20" height="20">
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <header class="page-header">
+            <h1 data-en="Delete Account &amp; User Data" data-km="លុបគណនី និងទិន្នន័យអ្នកប្រើប្រាស់">Delete Account &amp; User Data</h1>
+            <p data-en="Official account deletion and personal data removal request page for Seva24 by Saisons Brother Holding Co., Ltd."
+                data-km="ទំព័រផ្លូវការសម្រាប់ស្នើសុំលុបគណនី និងទិន្នន័យផ្ទាល់ខ្លួនសម្រាប់កម្មវិធី Seva24 របស់ក្រុមហ៊ុន Saisons Brother Holding Co., Ltd.">
+                Official account deletion and personal data removal request page for Seva24 by Saisons Brother Holding Co., Ltd.
+            </p>
+        </header>
+
+        <main class="subpage-card policy-body">
+            <!-- App and Developer Entity Verification Box (Required by Google Play Policy) -->
+            <div class="entity-box">
+                <div class="entity-row">
+                    <span class="label" data-en="Application Name" data-km="ឈ្មោះកម្មវិធី">Application Name</span>
+                    <span class="val">Seva24</span>
+                </div>
+                <div class="entity-row">
+                    <span class="label" data-en="Package / App ID" data-km="លេខសម្គាល់កម្មវិធី (Package ID)">Package / App ID</span>
+                    <span class="val">com.renobuild.mobile.app</span>
+                </div>
+                <div class="entity-row">
+                    <span class="label" data-en="Developer / Company" data-km="អ្នកអភិវឌ្ឍន៍ / ក្រុមហ៊ុន">Developer / Company</span>
+                    <span class="val">Saisons Brother Holding Co., Ltd.</span>
+                </div>
+                <div class="entity-row">
+                    <span class="label" data-en="Store Listing" data-km="តំណភ្ជាប់លើ Store">Store Listing</span>
+                    <span class="val"><a href="https://play.google.com/store/apps/details?id=com.renobuild.mobile.app" target="_blank" rel="noopener noreferrer" style="color:var(--gold-deep);text-decoration:underline;">Google Play Store</a></span>
+                </div>
+            </div>
+
+            <div class="danger-alert">
+                <p data-en="<strong>Important Notice:</strong> Deleting your Seva24 account is permanent. Once completed, your profile, authentication credentials, registered phone number, service address history, and preferences will be permanently wiped from our active systems."
+                    data-km="<strong>ដំណឹងសំខាន់៖</strong> ការលុបគណនី Seva24 របស់អ្នកគឺមិនអាចត្រឡប់វិញបានទេ។ នៅពេលដំណើរការចប់ ប្រវត្តិរូប ព័ត៌មានសម្ងាត់ចូលប្រើប្រាស់ លេខទូរស័ព្ទ ប្រវត្តិអាសយដ្ឋានកក់សេវាកម្ម និងទិន្នន័យចំណូលចិត្តរបស់អ្នក នឹងត្រូវបានលុបជាអចិន្ត្រៃយ៍ពីប្រព័ន្ធរបស់យើង។">
+                    <strong>Important Notice:</strong> Deleting your Seva24 account is permanent. Once completed, your profile, authentication credentials, registered phone number, service address history, and preferences will be permanently wiped from our active systems.
+                </p>
+            </div>
+
+            <h2><span class="sec-num">1</span> <span data-en="Method 1: In-App Account Deletion (Instant)" data-km="វិធីសាស្ត្រទី ១៖ លុបគណនីនៅក្នុងកម្មវិធី (ភ្លាមៗ)">Method 1: In-App Account Deletion (Instant)</span></h2>
+            <p data-en="If you have the Seva24 app installed on your smartphone, you can instantly delete your account at any time:"
+                data-km="ប្រសិនបើអ្នកមានកម្មវិធី Seva24 លើទូរស័ព្ទរបស់អ្នក អ្នកអាចលុបគណនីបានភ្លាមៗគ្រប់ពេលវេលា៖">
+                If you have the Seva24 app installed on your smartphone, you can instantly delete your account at any time:
+            </p>
+            <ol class="step-list">
+                <li data-en="Open the <strong>Seva24</strong> application on your mobile device and log in." data-km="បើកកម្មវិធី <strong>Seva24</strong> នៅលើទូរស័ព្ទរបស់អ្នក និងចូលគណនី។">Open the <strong>Seva24</strong> application on your mobile device and log in.</li>
+                <li data-en="Go to the <strong>Profile</strong> tab on the bottom navigation bar." data-km="ចូលទៅកាន់ផ្ទាំង <strong>Profile (ប្រវត្តិរូប)</strong> នៅលើរបាររុករកខាងក្រោម។">Go to the <strong>Profile</strong> tab on the bottom navigation bar.</li>
+                <li data-en="Tap on <strong>Edit</strong> (Edit Profile)." data-km="ចុចលើប៊ូតុង <strong>Edit (កែសម្រួល)</strong>។">Tap on <strong>Edit</strong> (Edit Profile).</li>
+                <li data-en="On the top-right of the app bar, tap the <strong>Delete Person icon</strong>." data-km="នៅជ្រុងខាងស្តាំខាងលើនៃ App Bar សូមចុចលើ <strong>រូបតំណាងលុបគណនី (Delete Person Icon)</strong>។">On the top-right of the app bar, tap the <strong>Delete Person icon</strong>.</li>
+                <li data-en="A confirmation dialog will pop up. Type the confirmation text into the input field and confirm to permanently delete your account." data-km="ផ្ទាំងបញ្ជាក់នឹងបង្ហាញឡើង (Pop-up)។ សូមវាយបញ្ចូលពាក្យបញ្ជាក់ទៅក្នុងប្រអប់ ហើយចុចបញ្ជាក់ដើម្បីលុបគណនីជាអចិន្ត្រៃយ៍។">A confirmation dialog will pop up. Type the confirmation text into the input field and confirm to permanently delete your account.</li>
+            </ol>
+
+            <h2><span class="sec-num">2</span> <span data-en="Method 2: Submit Web Deletion Request" data-km="វិធីសាស្ត្រទី ២៖ ដាក់ពាក្យស្នើសុំលុបតាមរយៈវេបសាយ">Method 2: Submit Web Deletion Request</span></h2>
+            <p data-en="If you have uninstalled the app or cannot access your mobile device, submit the form below. Our support team at Saisons Brother Holding Co., Ltd. will process your deletion request within 7 business days."
+                data-km="ប្រសិនបើអ្នកបានលុបកម្មវិធីចោល ឬមិនអាចចូលប្រើទូរស័ព្ទបានទេ សូមបំពេញទម្រង់បែបបទខាងក្រោម។ ក្រុមការងារជំនួយរបស់ក្រុមហ៊ុន Saisons Brother Holding Co., Ltd. នឹងដំណើរការសំណើរបស់អ្នកក្នុងរយៈពេល ៧ ថ្ងៃនៃថ្ងៃធ្វើការ។">
+                If you have uninstalled the app or cannot access your mobile device, submit the form below. Our support team at Saisons Brother Holding Co., Ltd. will process your deletion request within 7 business days.
+            </p>
+
+            <form class="contact-form" id="deletion-form" style="margin-top:20px;" novalidate>
+                <div class="form-group">
+                    <label class="form-label" for="del-name" data-en="Full Name (as registered in Seva24)" data-km="ឈ្មោះពេញ (ដូចដែលបានចុះឈ្មោះក្នុង Seva24)">Full Name (as registered in Seva24)</label>
+                    <input class="form-input" type="text" id="del-name" name="name" required placeholder="e.g. John Doe">
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="del-phone" data-en="Registered Phone Number" data-km="លេខទូរស័ព្ទដែលបានចុះឈ្មោះ">Registered Phone Number</label>
+                    <input class="form-input" type="tel" id="del-phone" name="phone" inputmode="tel" required placeholder="e.g. 078 222 876">
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="del-email" data-en="Email Address (Optional)" data-km="អាសយដ្ឋានអ៊ីមែល (ស្រេចចិត្ត)">Email Address (Optional)</label>
+                    <input class="form-input" type="email" id="del-email" name="email" placeholder="e.g. name@example.com">
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="del-reason" data-en="Reason for Deletion (Optional)" data-km="មូលហេតុនៃការលុប (ស្រេចចិត្ត)">Reason for Deletion (Optional)</label>
+                    <textarea class="form-textarea" id="del-reason" name="reason" style="min-height:80px;" placeholder="Help us improve our service..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="del-confirm" required>
+                        <label for="del-confirm" data-en="I confirm that I want to permanently delete my Seva24 account and all associated personal data held by Saisons Brother Holding Co., Ltd."
+                            data-km="ខ្ញុំសូមបញ្ជាក់ថាខ្ញុំពិតជាចង់លុបគណនី Seva24 និងទិន្នន័យផ្ទាល់ខ្លួនទាំងអស់ដែលរក្សាទុកដោយក្រុមហ៊ុន Saisons Brother Holding Co., Ltd. ជាអចិន្ត្រៃយ៍។">
+                            I confirm that I want to permanently delete my Seva24 account and all associated personal data held by Saisons Brother Holding Co., Ltd.
+                        </label>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-submit" style="background:#DC2626;">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="3 6 5 6 21 6"></polyline>
+                        <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                    </svg>
+                    <span data-en="Submit Account Deletion Request" data-km="ដាក់ស្នើសុំលុបគណនី">Submit Account Deletion Request</span>
+                </button>
+
+                <div class="form-alert" id="deletion-alert" role="status" aria-live="polite"></div>
+            </form>
+
+            <h2><span class="sec-num">3</span> <span data-en="Data Types Deleted vs. Retained" data-km="ប្រភេទនៃទិន្នន័យដែលត្រូវលុប និងរក្សាទុក">Data Types Deleted vs. Retained</span></h2>
+            <p data-en="Per Google Play User Data policies, here is the transparent breakdown of how your data is treated upon deletion:"
+                data-km="អនុលោមតាមគោលការណ៍ទិន្នន័យអ្នកប្រើប្រាស់របស់ Google Play ខាងក្រោមនេះជាតារាងលម្អិតអំពីរបៀបដែលទិន្នន័យរបស់អ្នកត្រូវបានគ្រប់គ្រងពេលស្នើសុំលុប៖">
+                Per Google Play User Data policies, here is the transparent breakdown of how your data is treated upon deletion:
+            </p>
+
+            <div class="table-responsive">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th data-en="Data Category" data-km="ប្រភេទនៃទិន្នន័យ">Data Category</th>
+                            <th data-en="Action" data-km="ចំណាត់ការ">Action</th>
+                            <th data-en="Retention Period &amp; Legal Basis" data-km="រយៈពេលរក្សាទុក និងមូលដ្ឋានច្បាប់">Retention Period &amp; Legal Basis</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-en="Account profile (Name, phone number, login credentials, avatars)" data-km="ប្រវត្តិរូបគណនី (ឈ្មោះ លេខទូរស័ព្ទ ព័ត៌មានចូលប្រើប្រាស់ រូបថត)">Account profile (Name, phone number, login credentials, avatars)</td>
+                            <td><strong style="color:#DC2626;" data-en="Deleted" data-km="លុបចោល">Deleted</strong></td>
+                            <td data-en="Purged from active databases within 7-30 days." data-km="លុបចេញពីប្រព័ន្ធទិន្នន័យសកម្មក្នុងរយៈពេល ៧ ទៅ ៣០ ថ្ងៃ។">Purged from active databases within 7-30 days.</td>
+                        </tr>
+                        <tr>
+                            <td data-en="Saved service addresses &amp; GPS coordinates" data-km="អាសយដ្ឋានកក់សេវា និងកូអរដោនេ GPS">Saved service addresses &amp; GPS coordinates</td>
+                            <td><strong style="color:#DC2626;" data-en="Deleted" data-km="លុបចោល">Deleted</strong></td>
+                            <td data-en="Permanently removed immediately upon account deletion." data-km="លុបជាអចិន្ត្រៃយ៍ភ្លាមៗនៅពេលលុបគណនី។">Permanently removed immediately upon account deletion.</td>
+                        </tr>
+                        <tr>
+                            <td data-en="Photos &amp; maintenance issue descriptions uploaded" data-km="រូបភាព និងការពិពណ៌នាបញ្ហាជួសជុលដែលបានផ្ទុកឡើង">Photos &amp; maintenance issue descriptions uploaded</td>
+                            <td><strong style="color:#DC2626;" data-en="Deleted" data-km="លុបចោល">Deleted</strong></td>
+                            <td data-en="Deleted from cloud storage buckets within 30 days." data-km="លុបចេញពីប្រព័ន្ធផ្ទុកឯកសារ Cloud ក្នុងរយៈពេល ៣០ ថ្ងៃ។">Deleted from cloud storage buckets within 30 days.</td>
+                        </tr>
+                        <tr>
+                            <td data-en="Invoices, payment logs &amp; completed service records" data-km="វិក្កយបត្រ កំណត់ត្រាបង់ប្រាក់ និងប្រវត្តិសេវាកម្មដែលបានបញ្ចប់">Invoices, payment logs &amp; completed service records</td>
+                            <td><strong style="color:#D97706;" data-en="Retained (Anonymized)" data-km="រក្សាទុក (លាក់អត្តសញ្ញាណ)">Retained (Anonymized)</strong></td>
+                            <td data-en="Retained for accounting, tax, and audit compliance as required by Cambodian commercial law. Stripped of personal identity where possible." data-km="រក្សាទុកសម្រាប់គោលបំណងគណនេយ្យ ពន្ធដារ និងសវនកម្ម ស្របតាមច្បាប់ពាណិជ្ជកម្មកម្ពុជា។ ព័ត៌មានអត្តសញ្ញាណត្រូវបានដកចេញ។">Retained for accounting, tax, and audit compliance as required by Cambodian commercial law. Stripped of personal identity where possible.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h2><span class="sec-num">4</span> <span data-en="Contact Support Directly for Deletion" data-km="ទាក់ទងផ្នែកបម្រើអតិថិជនដើម្បីលុប">Contact Support Directly for Deletion</span></h2>
+            <p data-en="You may also request account and data deletion directly through our customer care team:"
+                data-km="លោកអ្នកក៏អាចស្នើសុំលុបគណនី និងទិន្នន័យដោយផ្ទាល់តាមរយៈក្រុមការងារបម្រើអតិថិជនរបស់យើង៖">
+                You may also request account and data deletion directly through our customer care team:
+            </p>
+            <ul>
+                <li data-en="<strong>Customer Care Hotline:</strong> <a href=&quot;tel:+85578222876&quot; style=&quot;color:var(--gold-deep);font-weight:600;&quot;>078 222 876</a> (+855 78 222 876)"
+                    data-km="<strong>លេខទូរស័ព្ទជំនួយ៖</strong> <a href=&quot;tel:+85578222876&quot; style=&quot;color:var(--gold-deep);font-weight:600;&quot;>078 222 876</a> (+855 78 222 876)">
+                    <strong>Customer Care Hotline:</strong> <a href="tel:+85578222876" style="color:var(--gold-deep);font-weight:600;">078 222 876</a> (+855 78 222 876)
+                </li>
+                <li data-en="<strong>Telegram Support:</strong> <a href=&quot;https://t.me/seva24&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot; style=&quot;color:var(--gold-deep);font-weight:600;&quot;>@seva24</a>"
+                    data-km="<strong>តេឡេក្រាមជំនួយ (Telegram)៖</strong> <a href=&quot;https://t.me/seva24&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot; style=&quot;color:var(--gold-deep);font-weight:600;&quot;>@seva24</a>">
+                    <strong>Telegram Support:</strong> <a href="https://t.me/seva24" target="_blank" rel="noopener noreferrer" style="color:var(--gold-deep);font-weight:600;">@seva24</a>
+                </li>
+                <li data-en="<strong>Operating Entity:</strong> Saisons Brother Holding Co., Ltd."
+                    data-km="<strong>ក្រុមហ៊ុនប្រតិបត្តិការ៖</strong> Saisons Brother Holding Co., Ltd.">
+                    <strong>Operating Entity:</strong> Saisons Brother Holding Co., Ltd.
+                </li>
+                <li data-en="<strong>Address:</strong> Phnom Penh, Cambodia"
+                    data-km="<strong>អាសយដ្ឋាន៖</strong> រាជធានីភ្នំពេញ ព្រះរាជាណាចក្រកម្ពុជា">
+                    <strong>Address:</strong> Phnom Penh, Cambodia
+                </li>
+            </ul>
+        </main>
+    </div>
+
+    <footer>
+        <nav class="footer-nav" aria-label="Footer Navigation">
+            <a href="index.html" data-en="Home" data-km="ទំព័រដើម">Home</a>
+            <span class="sep">•</span>
+            <a href="privacy.html" data-en="Privacy Policy" data-km="គោលការណ៍ឯកជនភាព">Privacy Policy</a>
+            <span class="sep">•</span>
+            <a href="delete-account.html" class="active" data-en="Delete Account" data-km="លុបគណនី">Delete Account</a>
+            <span class="sep">•</span>
+            <a href="contact.html" data-en="Contact Us" data-km="ទំនាក់ទំនង">Contact Us</a>
+        </nav>
+        <p data-en="© 2026 Seva24 • Saisons Brother Holding Co., Ltd. All rights reserved."
+            data-km="© 2026 Seva24 • Saisons Brother Holding Co., Ltd. រក្សាសិទ្ធិគ្រប់យ៉ាង។">© 2026 Seva24 • Saisons Brother Holding Co., Ltd. All rights reserved.</p>
+        <p class="support">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+            </svg>
+            <span data-en="Need help? Call" data-km="ត្រូវការជំនួយ? ទំនាក់ទំនងមកលេខ">Need help? Call</span>
+            <a href="tel:+85578222876">078 222 876</a>
+        </p>
+    </footer>
+
+    <script>
+        const translatable = document.querySelectorAll('[data-en], [data-en-html]');
+
+        function applyLanguage(lang) {
+            translatable.forEach((el) => {
+                if (el.hasAttribute('data-en-html')) {
+                    el.innerHTML = lang === 'km' ? el.dataset.kmHtml : el.dataset.enHtml;
+                } else {
+                    el.innerHTML = lang === 'km' ? el.dataset.km : el.dataset.en;
+                }
+            });
+        }
+
+        const langButtons = document.querySelectorAll('.lang-switch button');
+
+        function setLanguage(lang) {
+            langButtons.forEach((b) => {
+                const isActive = b.dataset.lang === lang;
+                b.classList.toggle('active', isActive);
+                b.setAttribute('aria-pressed', String(isActive));
+            });
+            document.documentElement.lang = lang;
+            applyLanguage(lang);
+            localStorage.setItem('seva24-lang', lang);
+        }
+
+        langButtons.forEach((btn) => {
+            btn.addEventListener('click', () => setLanguage(btn.dataset.lang));
+        });
+
+        const savedLang = localStorage.getItem('seva24-lang');
+        if (savedLang) {
+            setLanguage(savedLang);
+        }
+
+        // Deletion form submit handling
+        const delForm = document.getElementById('deletion-form');
+        const alertBox = document.getElementById('deletion-alert');
+
+        delForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const name = document.getElementById('del-name').value.trim();
+            const phone = document.getElementById('del-phone').value.trim();
+            const confirmed = document.getElementById('del-confirm').checked;
+            const currentLang = localStorage.getItem('seva24-lang') || 'en';
+
+            if (!name || !phone || !confirmed) {
+                alertBox.className = 'form-alert';
+                alertBox.style.display = 'block';
+                alertBox.style.background = '#FEE2E2';
+                alertBox.style.color = '#B91C1C';
+                alertBox.style.borderColor = '#FECACA';
+                alertBox.textContent = currentLang === 'km'
+                    ? 'សូមបំពេញឈ្មោះ លេខទូរស័ព្ទ និងគូសបញ្ជាក់ការយល់ព្រម។'
+                    : 'Please fill in your name, phone number, and check the confirmation box.';
+                return;
+            }
+
+            alertBox.className = 'form-alert success';
+            alertBox.style.display = 'block';
+            alertBox.textContent = currentLang === 'km'
+                ? 'សំណើលុបគណនីរបស់អ្នកត្រូវបានបញ្ជូនដោយជោគជ័យ។ ក្រុមការងារ Seva24 (Saisons Brother Holding) នឹងដំណើរការ និងផ្ញើសារបញ្ជាក់ក្នុងរយៈពេល ៧ ថ្ងៃនៃថ្ងៃធ្វើការ។'
+                : 'Your account deletion request has been submitted successfully. The Seva24 support team at Saisons Brother Holding Co., Ltd. will process your request and send confirmation within 7 business days.';
+            delForm.reset();
+        });
+    </script>
+
+</body>
+
+</html>
