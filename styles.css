@@ -414,8 +414,323 @@ footer .support svg {
     .app-icon-wrap,
     .app-icon,
     .store-row,
-    .store-btn {
+    .store-btn,
+    .subpage-card,
+    .contact-card {
         animation: none;
         transition: none;
     }
 }
+
+/* ---------- Subpages (Privacy & Contact) ---------- */
+.page-wrap {
+    max-width: 760px;
+    padding-bottom: 48px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.nav-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--ink-soft);
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.18s ease;
+}
+
+.nav-back:hover {
+    color: var(--gold-deep);
+}
+
+.page-header {
+    margin: 20px 0 28px;
+    text-align: left;
+    animation: fade-up 0.5s ease-out both;
+}
+
+.page-header h1 {
+    font-size: clamp(1.8rem, 3.8vw, 2.4rem);
+    font-weight: 700;
+    line-height: 1.25;
+    margin-bottom: 8px;
+}
+
+.page-header p {
+    color: var(--ink-soft);
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+.subpage-card {
+    background: #ffffff;
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    padding: 36px 32px;
+    box-shadow: 0 4px 24px rgba(20, 20, 20, 0.04);
+    animation: fade-up 0.6s ease-out 0.1s both;
+}
+
+/* Policy Content Typography */
+.policy-body h2 {
+    font-family: 'Poppins', 'Kantumruy Pro', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--ink);
+    margin: 28px 0 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.policy-body h2:first-of-type {
+    margin-top: 0;
+}
+
+.policy-body h2 .sec-num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 8px;
+    background: var(--bg);
+    color: var(--gold-deep);
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.policy-body p {
+    color: var(--ink-soft);
+    line-height: 1.7;
+    margin: 0 0 14px;
+    font-size: 0.95rem;
+}
+
+.policy-body ul {
+    margin: 0 0 18px 20px;
+    padding: 0;
+    color: var(--ink-soft);
+    line-height: 1.7;
+    font-size: 0.95rem;
+}
+
+.policy-body li {
+    margin-bottom: 8px;
+}
+
+.policy-highlight {
+    background: #FFFDF8;
+    border: 1px solid rgba(244, 180, 0, 0.25);
+    border-left: 4px solid var(--gold);
+    border-radius: 10px;
+    padding: 16px 20px;
+    margin: 20px 0;
+}
+
+.policy-highlight p {
+    margin: 0;
+    color: var(--ink);
+    font-size: 0.92rem;
+}
+
+.policy-meta {
+    display: inline-block;
+    padding: 6px 12px;
+    background: var(--bg);
+    border-radius: 8px;
+    font-size: 0.82rem;
+    color: var(--ink-soft);
+    margin-bottom: 24px;
+}
+
+/* Contact Page Grid & Form */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 28px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.info-tile {
+    background: var(--bg);
+    border-radius: 14px;
+    padding: 18px;
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+a.info-tile:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(20, 20, 20, 0.05);
+}
+
+.info-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--gold-deep);
+    flex-shrink: 0;
+}
+
+.info-title {
+    font-weight: 600;
+    font-size: 0.92rem;
+    color: var(--ink);
+    margin-bottom: 2px;
+}
+
+.info-desc {
+    font-size: 0.85rem;
+    color: var(--ink-soft);
+    line-height: 1.4;
+    word-break: break-word;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form-label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--ink);
+}
+
+.form-input,
+.form-textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 10px;
+    border: 1px solid var(--line);
+    background: #fff;
+    font-family: inherit;
+    font-size: 0.92rem;
+    color: var(--ink);
+    outline: none;
+    transition: border-color 0.18s ease, box-shadow 0.18s ease;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+    border-color: var(--gold);
+    box-shadow: 0 0 0 3px rgba(244, 180, 0, 0.18);
+}
+
+.form-textarea {
+    min-height: 110px;
+    resize: vertical;
+}
+
+.btn-submit {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 13px 22px;
+    border-radius: 10px;
+    background: var(--ink);
+    color: #fff;
+    font-family: 'Inter', 'Kantumruy Pro', sans-serif;
+    font-weight: 600;
+    font-size: 0.95rem;
+    border: none;
+    cursor: pointer;
+    transition: background 0.18s ease, transform 0.18s ease;
+    margin-top: 4px;
+}
+
+.btn-submit:hover {
+    background: #2b2b2b;
+    transform: translateY(-1px);
+}
+
+.btn-submit:active {
+    transform: scale(0.98);
+}
+
+.form-alert {
+    padding: 12px 16px;
+    border-radius: 8px;
+    font-size: 0.88rem;
+    margin-top: 10px;
+    display: none;
+}
+
+.form-alert.success {
+    display: block;
+    background: #EAF8EF;
+    color: #15803D;
+    border: 1px solid #BBF7D0;
+}
+
+/* Footer Navigation Links */
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
+}
+
+.footer-nav a {
+    color: var(--ink-soft);
+    font-size: 0.85rem;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.18s ease;
+}
+
+.footer-nav a:hover,
+.footer-nav a.active {
+    color: var(--gold-deep);
+}
+
+.footer-nav .sep {
+    color: var(--line);
+    user-select: none;
+}
+
+@media (max-width: 720px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .subpage-card {
+        padding: 24px 20px;
+    }
+
+    .page-wrap {
+        padding: 0 18px 36px;
+    }
+}
+
